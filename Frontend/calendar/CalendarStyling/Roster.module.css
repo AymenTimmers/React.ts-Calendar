@@ -1,0 +1,57 @@
+.calendarContainer {
+  display: grid;
+  grid-template-columns: 60px repeat(7, minmax(0, 1fr));
+  width: 100%;
+  height: calc(100% - 1px);
+  background-image:
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 39px,
+    var(--text-default) 40px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 79px,
+    var(--accent-gray) 80px
+  );
+  border: 1px solid var(--text-default);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.timeColumn {
+  display: grid;
+  grid-template-rows: 40px repeat(24, 40px);
+  text-align: center;
+}
+
+.timeColumn h2 {
+    font-size: 16px;
+}
+
+.dayColumn {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  border-left: 1px solid #ddd;
+  text-align: center;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+.dayColumn h2 {
+  font-size: clamp(10px, 8cqw, 18px);
+}
+
+.timeColumn,
+.dayColumn {
+    container-type: inline-size;
+}
+
+.dayBody {
+  position: relative;
+  height: 100%;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}

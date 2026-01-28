@@ -1,0 +1,66 @@
+.mainContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 1.5rem;
+  border: 2px solid var(--accent-orange);
+  background-color: var(--background);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.value {
+  font-size: 1.1rem;
+  color: var(--text-default);
+}
+
+.descriptionContainer {
+  width: 95%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--accent-orange);
+  border-radius: 4px;
+  line-height: 1.6;
+  color: var(--text-default);
+  white-space: pre-wrap;
+}
+
+.infoOrder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.backButton {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--accent-orange);
+  color: var(--accent-orange);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.backButton:hover {
+  background: var(--accent-orange);
+  color: white;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
