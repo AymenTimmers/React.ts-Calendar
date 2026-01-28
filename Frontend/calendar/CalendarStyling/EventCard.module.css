@@ -1,0 +1,55 @@
+.popup {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 12px;
+    background-color: var(--background);
+    border: 2px solid var(--accent-orange);
+}
+
+.cardBody {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%; /* fill parent dayBody */
+  box-sizing: border-box; /* include padding/border in width */
+  background-color: var(--accent-orange);
+  color: var(--background);
+  border-radius: 0.5rem;
+  border: 2px solid var(--accent-orange);
+  padding: 0.25rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Text Styling */
+.cardBody h3 {
+  font-size: clamp(10px, 8cqw, 14px);
+  font-weight: bold;
+  margin: 0;
+}
+
+.cardBody p {
+  font-size: clamp(10px, 8cqw, 14px);
+  margin: 0;
+}
+
+/* Hover / focus effect */
+.cardBody:hover,
+.cardBody:focus {
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 
+              0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: var(--text-default); /* reinforce highlight */
+}
+
+/* Optional: active/pressed state */
+.cardBody:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+              0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.cardBody:focus {
+  outline: 2px solid var(--accent-orange);
+}
