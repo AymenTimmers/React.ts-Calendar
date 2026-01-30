@@ -1,0 +1,41 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #252422;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Global Styling Colours */
+  --background: #252422;
+  --text-default: #ccc5b9;
+  --accent-orange: #eb5e28;
+  --accent-gray: #403d39;
+}
+
+/* Ensure the app can use full viewport height and support sticky footer via flex layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make the React root a column flex container so App-level children
+   (the main content container and the Footer) can be laid out vertically
+   and the main content can grow to push the footer to the bottom. */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

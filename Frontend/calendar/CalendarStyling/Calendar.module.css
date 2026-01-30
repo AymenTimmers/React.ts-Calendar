@@ -1,7 +1,0 @@
-.pagecontainer {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  min-height: 100vh;
-  overflow: hidden;
-}
