@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyAspCoreApp</name>
+    </assembly>
+    <members>
+        <member name="M:MyBackend.Controllers.CalendarController.GetCalendarById(System.Int32,System.Int32)">
+            <summary>
+            Retreives a calendar event based on id.
+            </summary>
+            <param name="id">Id for the event</param>
+            <param name="userId">The user id gets sent from the frontend</param>
+            <returns>The found event</returns>
+        </member>
+        <member name="M:MyBackend.Controllers.CalendarController.GetCalendarByWeek(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Gets all calendar events for a single week. Used by frontend calendar
+            </summary>
+            <param name="start">Start of the week</param>
+            <param name="end">End of the week</param>
+            <param name="userId">events for user with this id</param>
+            <returns>Returns a list of calendarevents.</returns>
+        </member>
+        <member name="M:MyBackend.Controllers.CalendarController.SaveNewCalendarAppointment(System.Int32,CalendarDTO)">
+            <summary>
+            Retreives a new calendar event from the frontend and saves it in the database.
+            </summary>
+            <param name="newCalendar">the event that needs to be saved</param>
+            <param name="userId">the user it belongs to</param>
+            <returns>The created calendar event</returns>
+        </member>
+        <member name="M:MyBackend.Controllers.CalendarController.DeleteCalendarAppointment(System.Int32,System.Int32)">
+            <summary>
+            Delete an exisiting calendar event.
+            </summary>
+            <param name="id">id of the calendar to be deleted</param>
+            <param name="userId">the user it belongs to</param>
+            <returns>nothing</returns>
+        </member>
+        <member name="M:MyBackend.Controllers.CalendarController.EditCalendarAppointment(System.Int32,CalendarDTO,System.Int32)">
+            <summary>
+            Edit an exisiting calendar event.
+            </summary>
+            <param name="id">Identifier for the event</param>
+            <param name="updatedCalendar">new data for the event</param>
+            <param name="userId">Identifier for the user that the event belongs to</param>
+            <returns>The updated calendar event</returns>
+        </member>
+    </members>
+</doc>
